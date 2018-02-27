@@ -1,0 +1,18 @@
+language: python
+python:
+- '3.4'
+- '3.5'
+- '3.6'
+install:
+- pip install -r requirements.txt
+script:
+- python -m unittest discover
+notifications:
+  webhooks:
+    urls:
+      secure: dCux1msDAAh15+YYCDCsXPytZXnFY/l6v2KDazDUgyxN1WPEykbw075WXV3oKI0oegtbv5+gjB9M6JJWJME8ud5i1dDIkwCOiTIk3aXuG5BpYgBx5IDA9t6gVuedHp8tPLAKRTSz426HG/LJgT5zWNWOPfgWUzcAXeO5KlzjWRQNuXEit64+Pwc5w3Fh8iPUvYY7gAlglN/29CO7ONXQAO8NSXERgIFPltZstvRasKyHwVj7s3b3VtVHXv5xCUzwTjI2370FAcUMVbVMPc1DzpkY8qEfzFRw1iFJ3oiXXGYeoPcezqaj5ZHdjFtUt8RfsIErQPx9/JNu5t6OHLRbtE3Sxnjp+ML/EeOrR/ErScj4+a24OIeEBE2KWnktQJAZkRBZ7uH09/Dcr6WdxewxmuhVQsMyDcqmIsyI6pnU9FR204nJuQE5UWQu9b59UMZH8tMn27/vyogg5DV7vXgaIbzhJNXromozYPbcaGkCaQfz/OTr0V9jvY12pkHJ146QZ+c+N5m7X5yQD53v+/B9VywLLd0BtUcizMC4qONfY/dsi02SVtbW83VQJexADUfb/0bZcPN2cwnQtTmTFYMPbzgBQGPnVDZlQ3l6cZ1Z+H3jSSTqqhJVjo9c9UvlTMftuScX5cLxUnPWf5CqCF9r2D+sX4QKv0GlAqE7Ntl/PcQ=
+    on_success: always
+    on_failure: always
+    on_start: never
+    on_cancel: never
+    on_error: always
